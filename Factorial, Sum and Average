@@ -1,0 +1,66 @@
+
+
+def factorial(n):
+
+    if n == 0:
+
+        return 1
+
+    else:
+
+        return n * factorial(n - 1)
+
+num = int(input("Enter the number to calculate the factorial: "))
+
+if num < 0:
+
+        print("Factorial is not possible for negative number.")
+
+else:
+
+        numb = factorial(num)
+
+        print(f"The factorial of {num} is {numb}")
+
+Enter a number to calculate its factorial: 4
+
+The factorial of 5 is 24
+
+
+
+
+
+AVERAGE AND SUM
+
+
+
+def calculate_sum_and_average(numbers):
+
+    total = sum(numbers)
+
+    average = total / len(numbers)
+
+
+
+    return total, average
+
+numbers = [1, 2, 3, 4, 5]
+
+total, average = calculate_sum_and_average(numbers)
+
+
+
+if total is not None and average is not None:
+
+    print(f"Sum: {total}")
+
+    print(f"Average: {average}")
+
+else:
+
+    print("The list is empty.")
+
+Sum: 15.0
+
+Average: 3.0
+
